@@ -2,15 +2,40 @@
 ###
 
 GET {{server}}
-###
-
+###LISTAR CURSOS
 GET {{server}}/cursos
-
-###
+###AGREGAR UN CURSO
 POST {{server}}/cursos
 Content-Type: application/json
 
 {"nombre": "Algoritmos", "creditos": 3}
-
 ###
+GET {{server}}/cursos/1
+###EDITAR EL NOMBRE DEL CURSO
+PATCH {{server}}/cursos/1
+Content-Type: application/json
 
+{"nombre": "Algoritmos"}
+###AGREGAR UN CURSO
+POST {{server}}/cursos
+Content-Type: application/json
+
+{"nombre": "Lenguaje de Programacion", "creditos": 4}
+###AGREGAR UN CURSO
+POST {{server}}/cursos
+Content-Type: application/json
+
+{"nombre": "Estructura de Datos", "creditos": 2}
+###AGREGAR UN CURSO
+POST {{server}}/cursos
+Content-Type: application/json
+
+{"nombre": "Compiladores", "creditos": 2}
+###listar solo 2 cursos
+GET {{server}}/cursos?size=2
+###listar paginas
+GET {{server}}/cursos?size=2&page=3
+###listar pagina ordenandolo asc
+GET {{server}}/cursos?size=2&page=0&sort=creditos,desc
+#####
+GET {{server}}/cursos/search/findByNombre?nombre=Compiladores
