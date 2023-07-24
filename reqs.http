@@ -1,4 +1,4 @@
-@server = https://dnicola11-turbo-robot-ggv9q5rvpx9cw699-8080.preview.app.github.dev
+@server = https://dnicola11-super-waddle-6jx6gr5x799254qg-8080.preview.app.github.dev
 ###
 
 GET @{{server}}
