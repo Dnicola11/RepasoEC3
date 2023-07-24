@@ -1,13 +1,13 @@
 @server = https://dnicola11-super-waddle-6jx6gr5x799254qg-8080.preview.app.github.dev
 ###
 
-GET @{{server}}
+GET {{server}}
 ###
 
-GET @{{server}}/cursos
+GET {{server}}/cursos
 
 ###
-POST @{{server}}/cursos
+POST {{server}}/cursos
 Content-Type: application/json
 
 {"nombre": "Algoritmos", "creditos": 3}
