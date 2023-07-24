@@ -1,1 +1,16 @@
-GET https://dnicola11-turbo-robot-ggv9q5rvpx9cw699-8080.preview.app.github.dev
+@server = https://dnicola11-turbo-robot-ggv9q5rvpx9cw699-8080.preview.app.github.dev
+###
+
+GET @{{server}}
+###
+
+GET @{{server}}/cursos
+
+###
+POST @{{server}}/cursos
+Content-Type: application/json
+
+{"nombre": "Algoritmos", "creditos": 3}
+
+###
+
