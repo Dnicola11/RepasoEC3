@@ -1,0 +1,14 @@
+@server = https://dnicola11-super-waddle-6jx6gr5x799254qg-8080.preview.app.github.dev
+
+####
+GET {{server}}/carreras
+
+####
+POST {{server}}/carreras
+Content-Type: application/json
+
+{"nombre": "Marketing"}
+
+####CUANTAS CURSOS HAY EN ESA CARRERA
+GET {{server}}/carreras/1/cursos
+
